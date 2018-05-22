@@ -11,23 +11,23 @@
 
 #define RED_ON          0x0001      					// Enable and turn on the red LED
 #define RED_OFF         0xFFFE      					// Turn off the red LED
-#define GREEN_ON		0x0080							// Enable and turn on the green LED
-#define GREEN_OFF		0xFF7F							// Turn off the green LED
+#define GREEN_ON	0x0080						// Enable and turn on the green LED
+#define GREEN_OFF	0xFF7F						// Turn off the green LED
 #define ENABLE_PINS     0xFFFE      					// Required to use inputs and outputs
-#define BUTTON1			0x0002							// P1.1 is button 1
-#define BUTTON2			0x0004							// P1.2 is button 2
-#define UP 				0x0010							// Timer_A Up mode
+#define BUTTON1		0x0002						// P1.1 is button 1
+#define BUTTON2		0x0004						// P1.2 is button 2
+#define UP 		0x0010						// Timer_A Up mode
 #define CONTINUOUS      0x0020          				// Timer_A Continuous mode
-#define ACLK			0x0100							// Timer_A SMCLK source
-#define DEVELOPMENT 	0x5A80							// Stop the watchdog timer
-#define BOUNCE_DELAY	0xA000							// Delay for Button Bounce
-#define MS_10			400						     	// Approximate value to count for 10ms
-#define SMCLK			0x0200							// Timer_A SMCLK source
+#define ACLK		0x0100						// Timer_A SMCLK source
+#define DEVELOPMENT 	0x5A80						// Stop the watchdog timer
+#define BOUNCE_DELAY	0xA000						// Delay for Button Bounce
+#define MS_10		400						// Approximate value to count for 10ms
+#define SMCLK		0x0200						// Timer_A SMCLK source
 
 
 void main (void)
 {
-	void DisplayMultipleWords(char words[250]);			// Declare functions used
+	void DisplayMultipleWords(char words[250]);		
 	void ScrollWords(char words[250]);
 	void DisplayNumber(unsigned long int number);
 	void DisplayWord(char words[250]);
